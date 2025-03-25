@@ -6,6 +6,7 @@
 	--dark-black: #ffffff21;
 	--footer-lightingblue: #233142;
 	--how-black: #141d28;
+	--dark-blue: #233142;
 	--header-bg: #0c1117;
 }
 
@@ -33,6 +34,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0%;
 	color: var(--white-color);
+	background-color: var(--dark-blue);
 }
 
 .container {
@@ -42,6 +44,45 @@ body {
 	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.btn {
+	font-family: var(--universal-fontfamily);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0%;
+	border: 2px solid transparent;
+	color: var(--white-color);
+	background-color: var(--light-blue);
+	padding: 17px 37px;
+	border-radius: 37px;
+	transition: all 0.4s ease;
+}
+
+.btn:hover {
+	border: 2px solid var(--light-blue);
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn:active {
+	opacity: 0.6;
+}
+
+.btn-active {
+	margin-left: 14px;
+	background-color: transparent;
+	border: 2px solid var(--light-blue);
+	font-family: Poppins;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0%;
+}
+
+.btn-active:hover {
+	background-color: var(--light-blue);
 }
 
 .site-header__top {
@@ -125,6 +166,69 @@ body {
 
 .site-header__link:active {
 	opacity: 0.6;
+}
+
+.hero {
+	padding-top: 32px;
+	padding-bottom: 129px;
+	background-image: url(../images/hero/Bunisuse.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero_cointainer {
+	display: flex;
+	align-items: center;
+}
+
+.hero_info {
+	min-width: 666px;
+	width: 100%;
+	margin-right: 20px;
+}
+
+.hero_info-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 31px;
+}
+
+.hero_info-title3 {
+	font-weight: 400;
+	font-size: 140px;
+	line-height: 180px;
+	letter-spacing: 0%;
+	color: rgba(255, 255, 255, 0.13);
+	margin-right: 25px;
+}
+
+.hero_info-line {
+	width: 3px;
+	height: 130px;
+	background-color: var(--light-blue);
+	margin-right: 25px;
+}
+
+.hero_info-title {
+	font-family: var(--title-fontfamily);
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 110px;
+	letter-spacing: 0%;
+}
+
+.hero__text {
+	margin-bottom: 59px;
+}
+
+.hero_info-title span {
+	color: var(--light-blue);
+}
+
+.hero__img {
+	right: 0;
 }
 
 .top-list {
